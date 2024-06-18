@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#283990DC"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/SendButton"
+        android:layout_width="118dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="484dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/send_button"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/InputTxt"
+        android:layout_width="284dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="@string/input_txt"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/SendButton"
+        app:layout_constraintEnd_toStartOf="@+id/SendButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SendButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="222dp"
+        android:layout_height="60dp"
+        android:fontFamily="casual"
+        android:text="@string/logo_txt"
+        android:textColor="#3F51B5"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="357dp"
+        android:layout_height="396dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/tac" />
+</androidx.constraintlayout.widget.ConstraintLayout>
